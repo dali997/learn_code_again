@@ -1,0 +1,88 @@
+#creation de dossier à partir de 'cmd' -->
+Microsoft Windows [version 10.0.19042.1110]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\dali cherif\Desktop>mkdir learn_git_again
+
+#initialisation de git 
+$ git init
+
+# creation d'un fichier à partir de git
+$ touch third.txt
+# Add third.txt to the staging area. 
+$ git add .
+#Commit with the message "adding third.txt". 
+$ git commit -m 'adding third.txt'
+# Check out your commit with git log.
+$ git log
+commit 8e765129ad0668b6f7455458130c6ef639fa96d9 (HEAD -> master, origin/master)
+Author: dali997 <dalicherif1818@gmail.com>
+Date:   Wed Sep 29 15:26:52 2021 +0200
+
+    dali.txt is removed
+
+commit 6e38143b04c0f062ccec87035dd0b381afd0a256
+Author: dali997 <dalicherif1818@gamil.com>
+Date:   Wed Sep 29 15:14:28 2021 +0200
+
+    dali cherif
+
+commit 8924058338c6ae5ebb34731887c7fdaf6fa62521
+Author: dali997 <dalicherif1818@gamil.com>
+Date:   Wed Sep 29 11:03:47 2021 +0200
+
+    removing third.txt
+
+commit 3412e4985737493896809990687bad024e55db04
+Author: dali997 <dalicherif1818@gamil.com>
+Date:   Wed Sep 29 11:02:20 2021 +0200
+
+    adding fourth.txt
+
+commit 780091438b9c2ca85c3b026332190796b9735d2a
+Author: dali997 <dalicherif1818@gamil.com>
+Date:   Wed Sep 29 11:01:10 2021 +0200
+
+    adding third.txt
+
+# Create another file called fourth.txt.
+$ touch fourth.txt 
+# Add fourth.txt to the staging area. 
+$ git add .
+#Commit with the message "adding fourth.txt" 
+$ git commit -m 'adding fourth.txt'
+# Remove the third.txt file
+$ git rm third.txt
+# Add this change to the staging area.
+$ git add .
+# Commit with the message "removing third.txt".
+$ git commit -m 'removing third.txt'
+
+# Check out your commits using git log.
+commit 8924058338c6ae5ebb34731887c7fdaf6fa62521
+Author: dali997 <dalicherif1818@gamil.com>
+Date:   Wed Sep 29 11:03:47 2021 +0200
+
+    removing third.txt
+# Change your
+ global settings to core.pager=cat -
+$ git config --global core.pager 'cat-'
+
+#Write the appropriate  command to list all the 
+global configurations for git on your machine. 
+
+$ git congif --global user.name 'dali997'
+$ git config --global user.email 'dalicherif1818@gmail.com'
+
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+$ git remote add origin https://github.com/dali997/learn_code_again.git
+
+
+$ git push -u origin master
+
+
+
